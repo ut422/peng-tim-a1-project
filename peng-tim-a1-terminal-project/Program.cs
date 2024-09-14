@@ -37,4 +37,47 @@ namespace DadJokes101
                     Console.WriteLine("eh, who cares: 'They don't have the guts!'");
                 }
 
-              
+                // second joke interaction
+                Console.WriteLine("\nwanna to hear another one? (yes/no)");
+
+                string secondJoke = Console.ReadLine();
+
+                if (secondJoke == "yes")
+                {
+                    Console.WriteLine("ahem: Why don't eggs tell jokes?");
+                    Console.WriteLine("do you know? --> (yes/no)");
+
+                    string eggJoke = Console.ReadLine();
+
+                    if (eggJoke == "yes")
+                    {
+                        Console.WriteLine("the answer is: 'Because they might crack up!'");
+                    }
+                    else
+                    {
+                        Console.WriteLine("fine, I'll tell you: 'Because they might crack up!'");
+                    }
+                }
+                else if (secondJoke == "no")
+                {
+                    Console.WriteLine("alright fine, I'll stop... for now.");
+                }
+                else
+                {
+                    Console.WriteLine("who cares, I'm gonna take that as a yes whether you like it or not: 'Because they might crack up!'");
+                }
+
+                // end
+                Console.WriteLine("\nalright, that's enough dad jokes for one day");
+            }
+            else if (response == "no")
+            {
+                Console.WriteLine("no dad jokes?");
+            }
+            else
+            {
+                Console.WriteLine("dad jokes next time I guess");
+            }
+        }
+    }
+}
